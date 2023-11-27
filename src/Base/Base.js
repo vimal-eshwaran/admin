@@ -2,21 +2,21 @@ import React from "react";
 import { useHistory } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Button from 'react-bootstrap/Button';
-//Button
+
 const Base = ({title, description, children}) => {
   const history = useHistory();
   return (
     <div className='main-component base-component'>
        
-      <Button variant="danger"
+      <Button variant="success"
       onClick={()=>history.push("/")}
       >Dashboard</Button>
 
-      <Button variant="danger"
+      <Button variant="success"
       onClick={()=>history.push("/students")}
       >Student-List</Button>
 
-      <Button variant="danger"
+      <Button variant="success"
       onClick={()=>history.push("/add")}
       >Add-student</Button>
 

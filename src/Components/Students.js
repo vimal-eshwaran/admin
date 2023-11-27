@@ -4,10 +4,10 @@ import Card from 'react-bootstrap/Card';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { useHistory } from 'react-router-dom';
-//function
+
 function Students({students, setStudents}) {
    const history = useHistory();
-    // delete functionality
+  
     const deleteStudent =  (studId)=>{
       
       
@@ -36,16 +36,11 @@ function Students({students, setStudents}) {
                      <p>{stud.gender}</p>
                      <p>{stud.qualification}</p>
                      </Card.Text>
-                     <Button variant="primary" onClick={()=>history.push(`/edit/${stud.id}`)}>edit</Button> {" "}
-                     <Button variant="primary" onClick={()=>deleteStudent(stud.id)}>delete</Button>
+                     <Button variant="success" onClick={()=>history.push(`/edit/${stud.id}`)}>edit</Button> {" "}
+                     <Button variant="success" onClick={()=>deleteStudent(stud.id)}>delete</Button>
                      </Card.Body>
                      </Card>
                      </div> 
-                     
-
-                     
-                     
-                     
                     </div>
             ))}
      </div>

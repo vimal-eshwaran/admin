@@ -4,7 +4,6 @@ import { useHistory } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Button from 'react-bootstrap/Button';
 
- //Function
 
 function AddStudents({students, setStudents}) {
   const history = useHistory()
@@ -14,7 +13,6 @@ function AddStudents({students, setStudents}) {
     const [qualification, setQualification] = useState("")
 
 const createStudent =  () =>{
-    // creating object from input states
     const newStudents = {
       name:name,
       batch:batch,
@@ -60,7 +58,7 @@ const createStudent =  () =>{
         onChange={(e)=>setQualification(e.target.value)}
         />
 
-        <Button variant='primary'
+        <Button variant='success'
         onClick={createStudent}
         >Add Students</Button>
     </div>

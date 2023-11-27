@@ -4,7 +4,7 @@ import Base from '../Base/Base';
 import { useHistory } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Button from 'react-bootstrap/Button';
-//function
+
 function UpdateStudents({students, setStudents}) {
     const {id} = useParams();
      const editStudent = students[id]
@@ -69,7 +69,7 @@ function UpdateStudents({students, setStudents}) {
     onChange={(e)=>setQualification(e.target.value)}
     />
 
-    <Button variant='primary'
+    <Button variant='success'
     onClick={updateStudent}
     >Update Students</Button>
 </div>

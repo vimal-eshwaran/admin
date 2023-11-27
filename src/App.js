@@ -18,7 +18,6 @@ function App() {
 return (
     <div className="App">
        <Switch>
-        {/* Exact path first page to load */}
          <Route exact path="/">
              <DashBoard/>
          </Route>
